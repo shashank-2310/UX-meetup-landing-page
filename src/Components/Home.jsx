@@ -1,5 +1,6 @@
 // eslint-disable-next-line no-unused-vars
 import React from "react";
+import { Link } from "react-scroll";
 import Image from "../assets/Image.svg";
 import arrow from "../assets/arrow.svg";
 import arc from "../assets/arc.svg";
@@ -44,7 +45,15 @@ const Home = () => {
               type="button"
               className="capitalize tracking-wide px-4 py-2 mxs:my-3 rounded-md font-semibold border border-black bg-brown text-white hover:border-brown hover:shadow-lg focus:bg-transparent focus:text-black focus:border-brown focus:shadow-lg "
             >
-              Register now
+              <Link
+                to="register"
+                spy={true}
+                smooth={true}
+                offset={15}
+                duration={750}
+              >
+                Register now
+              </Link>
             </button>
             <div className="hidden mxs:flex items-center justify-center flex-col my-10">
               <p className="font-normal text-base text-center">
